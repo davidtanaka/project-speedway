@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Valdir - Transportadora</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="shortcut icon" href="{% static 'docs/speedway-fiv.webp' %}" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho com o menu -->
+    <header>
+        <div class="logo">
+            <a href="{% url 'home' %}">
+                <img src="{% static 'docs/log-speedway.png' %}" alt="Logo da Transportadora SPEEDWAY">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu-list">
+                <li><a href="{% url 'about' %}">Quem somos</a></li>
+                <li><a href="{% url 'services' %}">Serviços</a></li>
+                <li><a href="{% url 'estimates' %}">Faça seu orçamento</a></li>
+                <li><a href="{% url 'contact' %}">Contate-nos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção 'Quem somos' -->
+    <section class="about-us">
+        <img src="{% static 'docs/speedway-group.png' %}" alt="Ilustração de entregador representando a transportadora" class="about-us-image">
+        <div class="about-us-content">
+            <a href="{% url 'about' %}">
+                <h2 class="section-title">Quem somos?</h2>
+            </a>
+            <p>
+                Somos a transportadora SPEEDWAY, uma empresa dedicada a oferecer soluções logísticas eficientes e seguras 
+                para atender às necessidades de transporte de nossos clientes. Contamos com uma frota moderna e profissionais 
+                qualificados, garantindo agilidade e confiança nos serviços prestados.
+            </p>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2 class="section-title" id="content-services-avaibles">Serviços oferecidos</h2>
+        <div class="services-content">
+            <img src="{% static 'docs/delivery-speedway.jpeg' %}" alt="Ilustração de serviços da transportadora" class="services-image">
+            <ul class="services-list">
+                <li><strong>Transporte de cargas gerais:</strong> Enviamos qualquer tipo de carga, com segurança e eficiência, para todo o Brasil.</li>
+                <li><strong>Frete para todo o Brasil:</strong> Com a nossa frota, garantimos entregas rápidas e seguras em qualquer local do território nacional.</li>
+                <li><strong>Transporte de cargas pesadas:</strong> Oferecemos soluções especializadas para o transporte de cargas de grande porte.</li>
+                <li><strong>Consultoria logística:</strong> Ajudamos a otimizar o transporte da sua carga, oferecendo soluções logísticas personalizadas.</li>
+                <li><strong>Logística reversa:</strong> Realizamos a coleta de mercadorias e devoluções de maneira ágil e segura.</li>
+                <li><a href="{% url 'services' %}" id="link-for-all-services">Conferir todos os serviços</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    
+
+    <!-- Seção 'Faça seu orçamento' -->
+    <section class="budget">
+        <h2 class="section-title">Faça seu orçamento</h2>
+        <p>
+            Preencha o formulário abaixo com as informações necessárias, e nossa equipe entrará em contato com a melhor 
+            proposta para o seu transporte.
+        </p>
+        <form action="#" class="budget-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required aria-label="Digite seu nome completo">
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required aria-label="Digite seu e-mail">
+            
+            <label for="carga">Tipo de Carga:</label>
+            <input type="text" id="carga" name="carga" required aria-label="Informe o tipo de carga">
+            
+            <label for="origem">Origem:</label>
+            <input type="text" id="origem" name="origem" required aria-label="Informe a origem da carga">
+            
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" required aria-label="Informe o destino da carga">
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Seção 'Contate-nos' -->
+    <section class="contact">
+        <h2 class="section-title">Contate-nos</h2>
+        <p>Você pode entrar em contato conosco através dos seguintes canais:</p>
+        <ul>
+            <li>Email: <a href="mailto:contato@speedway.com.br">contato@speedway.com.br</a></li>
+            <li>Telefone: <a href="tel:+551112345678">(11) 1234-5678</a></li>
+            <li>Endereço: Rua das Transportadoras, 123 - São Paulo, SP</li>
+        </ul>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Transportadora SPEEDWAY. Todos os direitos reservados.</p>
+        <audio controls>
+            <source src="{% static 'audio/background-music.mp3' %}" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </footer>
+</body>
+</html>
