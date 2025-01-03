@@ -1,0 +1,60 @@
+# Configurações da aplicação 
+settings.py
+
+# Bytecode do Python
+__pycache__/
+*.pyc
+
+# Banco de dados SQLite
+db.sqlite3
+
+# Arquivos de logs
+*.log
+
+# Diretórios de mídia
+/media
+
+# Diretórios de arquivos estáticos coletados
+/static
+
+# Diretórios e arquivos de ambiente
+.env
+.venv/
+env/
+venv/
+*.env
+
+# Arquivos de configuração do IDE (ex: VSCode, PyCharm)
+.vscode/
+.idea/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de dependências do Django
+*.pot
+*.pyc
+
+# Arquivos gerados pelo sistema de testes
+*.cover
+*.hypothesis/
+
+# Arquivos temporários
+*.swp
+
+# Arquivos sensíveis
+secret_key.txt
+
+
+# Arquivos de backup
+*.bak
+
+# Arquivos de pacotes gerados pelo pip
+pip-wheel-metadata/
+*.egg-info/
+
+
+# Arquivos do PyInstaller
+dist/
+build/
