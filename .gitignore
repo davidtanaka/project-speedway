@@ -1,60 +1,48 @@
-# Configurações da aplicação 
-settings.py
+# Ignorar o arquivo de configuração settings.py
+project/settings.py
 
-# Bytecode do Python
-__pycache__/
-*.pyc
-
-# Banco de dados SQLite
+# Ignorar o banco de dados SQLite
 db.sqlite3
 
-# Arquivos de logs
-*.log
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+project/__pycache__/
 
-# Diretórios de mídia
-/media
-
-# Diretórios de arquivos estáticos coletados
-/static
-
-# Diretórios e arquivos de ambiente
-.env
-.venv/
-env/
+# Virtual Environment
 venv/
-*.env
+env/
 
-# Arquivos de configuração do IDE (ex: VSCode, PyCharm)
+# Django
+*.log
+local_settings.py
+media/
+staticfiles/
+*.pot
+*.py[co]
+
+# IDEs
 .vscode/
 .idea/
+*.sublime-workspace
+*.sublime-project
 
-# Arquivos do sistema
+# Sistema operacional
 .DS_Store
 Thumbs.db
 
-# Arquivos de dependências do Django
-*.pot
-*.pyc
-
-# Arquivos gerados pelo sistema de testes
-*.cover
-*.hypothesis/
-
 # Arquivos temporários
 *.swp
-
-# Arquivos sensíveis
-secret_key.txt
-
-
-# Arquivos de backup
 *.bak
+*.tmp
+*.orig
 
-# Arquivos de pacotes gerados pelo pip
-pip-wheel-metadata/
+# Outros
+*.env
+.env/
+.coverage
 *.egg-info/
-
-
-# Arquivos do PyInstaller
-dist/
 build/
+dist/
