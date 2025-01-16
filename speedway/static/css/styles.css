@@ -161,7 +161,7 @@ h2#content-services-avaibles {
 .services-list li::before {
     position: absolute;
     left: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--primary-color); /* Cor do marcador */
 }
 
@@ -291,8 +291,8 @@ footer audio {
 /* Estilo para o conteúdo do parágrafo */
 .text-p-about-us-complete-page {
     font-family: var(--font-text);
-    font-size: 1.2em;
-    line-height: 1.8;
+    font-size: 1.1rem;
+    line-height: 1.6;
     color: var(--text-color);
     max-width: 800px;
     margin: 0 auto;
@@ -303,6 +303,38 @@ footer audio {
     border-radius: 10px; /* Bordas mais arredondadas */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about-div-complete-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Reduzido para melhorar a proximidade entre texto e imagem */
+    text-align: center;
+    max-width: 800px; /* Limitar largura para centralizar melhor o conteúdo */
+    margin: 0 auto; /* Centralizar o bloco na página */
+    padding: 20px;
+    background-color: #fff; /* Fundo branco */
+    border-radius: 15px; /* Bordas arredondadas como no parágrafo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 30px;
+}
+
+.image-div-about-complete-page {
+    width: 100%; /* Largura menor para equilíbrio com o texto */
+    height: auto; /* Mantém a proporção original da imagem */
+    border-radius: 15px; /* Bordas arredondadas para consistência */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave */
+}
+
+#image-p1-truck {
+    border-radius: 20px;
+    width: 90%;
+    height: 500px;
+}
+
+.p2-img-moto-allign {
+    display: flex;
 }
 
 /* Responsividade */
@@ -340,5 +372,4 @@ footer audio {
     line-height: 1.8;
     text-align: center; /* Garante o alinhamento central */
 }
-
 
